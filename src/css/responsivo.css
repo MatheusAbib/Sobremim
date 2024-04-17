@@ -1,0 +1,37 @@
+        @media(max-width:1280px){ /*serve para: se a tela for menor que 1280px ele muda, aplica regra no seletor
+        (.home), nesse caso, como a tela é menor que 1280px, o loyalt da pagina fica em forma de coluna*/
+                
+                .cabecalho{
+                    padding: 30px; 
+                }
+                .home{
+                   flex-direction: column;
+                   align-items: center;
+                   margin:50px 0; /*50 em cima e em baixo e 0 aos lados*/
+                   gap: 30px; /*espaçamento entre os elementos*/
+                }
+                .home .informacoes{
+                    max-width: 100%; 
+                    text-align: center; /*centraliza o texto*/
+                    align-items: center; /*alinha os itens/elementos(as redes sociais no caso) no centro*/
+                }
+                .projetos .container-projetos{
+                    padding: 0 30px; /*espaçamento entre os elementos, 0 em cima e em baixo e 30 aos lados*/
+                }
+        }
+
+        @media(max-width:425px){
+            .home .informacoes h1{
+                font-size: 10px;
+            }
+            .home .informacoes p{
+                font-size: 18px;
+            }
+
+            .home .container-foto img{
+                max-width: 320px;
+            }
+            .projetos{
+                padding: 30px;
+            }
+        }
